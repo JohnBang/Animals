@@ -3,31 +3,11 @@
  */
 public class Chicken extends Animal implements Animals {
 
-    public Chicken(String name){
+    public Chicken(String name, int koefSpeed){
+        this.name = name;
         legs = 2;
+        maxSpeed(koefSpeed);
     }
 
-    @Override
-    public int maxSpeed(int koef) {
-        return legs * koef;
-    }
-    @Override
-    public void eat(int weight) {
-
-    }
-
-    @Override
-    public void drink(int volume) {
-
-    }
-
-    @Override
-    public void sleep(int time) {
-
-    }
-
-    @Override
-    public void printStates() {
-
-    }
 }
+
